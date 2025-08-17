@@ -146,7 +146,7 @@ with st.sidebar:
     uv_pick = st.radio("자외선 조사 시간(분) 선택", [15, 30], index=0, horizontal=True)
     show_markers = st.checkbox("마커 표시", value=True)
     st.caption("시간축은 0분~120분")
-    st.caption("마우스를 그래프 위에 올려 활성도 확인")
+    st.caption("마우스를 그래프 위에 올려 활성도 확인하세요")
 # 예측 곡선 생성
 curve, area_sod, area_cat = predict_curve_final(uv_pick, 120, 2)
 
@@ -181,4 +181,5 @@ st.download_button(
 
 st.caption("생기부 끝!!")
 st.caption("개발 기간 : 2025.04.17 - 2025.08.17, 약 123일")
+
 
