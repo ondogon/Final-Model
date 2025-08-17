@@ -167,7 +167,7 @@ fig.add_trace(go.Scatter(
 
 fig.update_layout(
     title=f"UV {uv_pick}분 — 예측 곡선",
-    xaxis_title="경과 시간 (분)", yaxis_title="상대 활성(↑=more)",
+    xaxis_title="경과 시간 (분)", yaxis_title="활성도 (상댓값)",
     hovermode="x unified", template="plotly_white", legend_title_text=""
 )
 st.plotly_chart(fig, use_container_width=True)
@@ -181,5 +181,6 @@ st.download_button(
 
 st.caption("생기부 끝!!")
 st.caption("개발 기간 : 2025.04.17 - 2025.08.17, 약 123일")
+
 
 
